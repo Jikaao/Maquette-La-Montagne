@@ -1,4 +1,39 @@
 form {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 0 auto;
+  padding: 25px 0;
+  align-items: start;
+  label {
+    text-align: left;
+    width: 100%;
+    margin: 25px 0;
+    font-size: 0.9rem;
+    font-family: $font1;
+    color: $grey3;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  input {
+    border: 1px solid $grey1;
+    width: 100%;
+    height: 50px;
+    border-radius: 5px;
+    background: $grey2;
+  }
+  textarea {
+    border: 1px solid $grey1;
+    width: 100%;
+    border-radius: 5px;
+    background: $grey2;
+    resize: none;
+    min-height:250px;
+  }
+  button {
+    margin: 40px 0;
+    background: $grey2;
+    color: $grey3;
+    border: 1px solid $grey1;
+  }
 }

@@ -1,33 +1,60 @@
 header {
-    min-height: 100vh;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    button {
-        padding: 25px 29px;
-        border-radius: 1000px;
-        border: 1px solid $color2;
-        color: $color2;
-        background: transparent;
-        transition: 0.2s;
-        font-size: 1.2rem;
-        cursor: pointer;
-        &:hover {
-            background: rgba(216, 255, 255, 0.822);
-            transform: scale(1.1);
-          }
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  color: $white1;
+  button {
+    padding: 25px 29px;
+    border-radius: 1000px;
+    border: 1px solid $white1;
+    color: $white1;
+    background: transparent;
+    transition: 0.2s;
+    font-size: 1.3rem;
+    cursor: pointer;
+    &:hover {
+      background: rgba(216, 255, 255, 0.822);
+      transform: scale(1.1);
     }
+  }
+  h1 {
+    font-size: 5.6rem;
+    font-family: $font1;
+    text-transform: uppercase;
+    letter-spacing: 7px;
+    max-width: 80%;
+  }
+  p {
+    margin: 80px 0;
+    font-size: 1.3rem;
+    max-width: 80%;
+  }
+
+  @media screen and (max-width: 1335px) {
     h1 {
-        color: $color2;
-        font-size: 5.6rem;
-        font-family: "Inter", sans-serif;
-        text-transform: uppercase;
-        letter-spacing: 7px;
+      font-size: 4rem;
     }
     p {
-        color: $color2;
-        margin: 80px 0;
-        font-size: 1.3rem;
+      font-size: 1rem;
     }
+    button {
+      font-size: 0.9rem;
+      padding: 20px 23px;
+    }
+  }
+  @media screen and (max-width: 900px) {
+    h1 {
+      font-size: 3rem;
+    }
+    p {
+      font-size: 0.9rem;
+    }
+  }
+  @media screen and (max-width: 600px) {
+    h1 {
+      font-size: 2.3rem;
+    }
+  }
 }

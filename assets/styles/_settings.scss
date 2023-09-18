@@ -1,38 +1,64 @@
-$color1: black;
-$color2: white;
-$color3: #e9e9e9;
-
 @font-face {
-    font-family: "Inter";
-    src: url(/assets/fonts/Inter-ExtraBold.ttf);
+  font-family: "inter";
+  src: url(/assets/fonts/Inter-ExtraBold.ttf);
 }
 @font-face {
-    font-family: "Merriweather";
-    src: url(/assets/fonts/Merriweather-Light.ttf);
+  font-family: "merriweather";
+  src: url(/assets/fonts/Merriweather-Light.ttf);
+}
+
+$font1: inter, sans-serif;
+$font2: merriweather, sans-serif;
+$black1: rgb(17,17,17);
+$white1: rgb(243,243,243);
+$grey1: rgb(209,209,209);
+$grey2: rgb(233,233,233);
+$grey3: rgb(105,105,105);
+
+@mixin title {
+    font-family: $font1;
+    letter-spacing: 2px;
+    text-transform: uppercase;
 }
 
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    align-items: center;
-    text-align: center;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  align-items: center;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+li {
     list-style: none;
 }
-
+a, a:visited {
+    color: $white1;
+}
 body {
-    background: fixed;
-    background: url(/assets/images/bg.jpg) fixed center/cover;
-}
+  background: url(/assets/images/bg.jpg) fixed center/cover;
+  text-align: center;
+  font-family: $font2;
+  max-width: 1300px;
+  margin: 0 auto;
 
-a {
-    cursor: pointer;
-    color: $color1;
-    &:visited {
-        color: $color1;
+  &:before {
+    content: "";
+    position: absolute;
+    background: $black1;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: black;
+    animation: animeBefore 1.5s ease forwards;
+
+    @keyframes animeBefore {
+      to {
+        opacity: 0;
+      }  
     }
-}
-
-p {
-    font-family: "Merriweather", sans-serif;
+  }
 }

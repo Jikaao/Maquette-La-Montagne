@@ -1,38 +1,73 @@
 footer {
-    background: $color3;
-    width: 75%;
-    min-height: 400px;
-    margin: 30px auto;
-    display: flex;
-    .footer {
-        width: 100%;
-    }
+  background: $grey2;
+  min-height: 400px;
+  margin: 30px auto;
+  display: flex;
+  .footer {
+    width: 100%;
+  }
 
-    i {
-        color: $color1;
+  .infos {
+    box-shadow: inset 1px 0px 0px rgba(0, 0, 0, 0.153);
+    height: 100%;
+  }
+
+  .info {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    box-shadow: inset 0px 1px 0px rgba(0, 0, 0, 0.153);
+    font-size: 1.2rem;
+    h4 {
+      color: $grey3;
+      margin: 0 75px 0 25px;
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      font-family: $font1;
+      letter-spacing: 1px;
+      padding: 90px 20px;
+    }
+    address {
+      color: $grey3;
+      text-align: start;
+    }
+    a {
+      color: $grey3;
+      text-align: start;
+    }
+    ul {
+      display: flex;
+      min-width: 40%;
+      font-size: 1.2rem;
+      justify-content: flex-start;
+      li {
+        margin: 0 5px;
+      }
+      i {
+        color: $black1;
         transition: 0.2s;
-        border: 1px solid rgba(0, 0, 0, 0.411);
+        border: 1px solid $grey3;
         border-radius: 200px;
-        padding: 10px;
+        padding: 15px;
         &:hover {
-            transform: scale(1.2);
+          transform: scale(1.2);
         }
+      }
     }
-
-    .infos {
-        box-shadow: inset 1px 0px 0px rgba(0, 0, 0, 0.153);
-    }
+  }
+  @media screen and (max-width: 1335px) {
+    display: block;
 
     .info {
-        display: flex;
-        box-shadow: inset 0px 1px 0px rgba(0, 0, 0, 0.153);
-        ul {
-            display: flex;
+      font-size: 1.1rem;
+      h4 {
+        margin: 0 45px 0 15px;
+      }
+      ul {
+        font-size: 1rem;
+        i {
+          padding: 12px;
         }
+      }
     }
-
-    .form {
-        
-    }
-
+  }
 }
