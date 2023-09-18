@@ -1,7 +1,7 @@
 footer {
     background: $color3;
     width: 75%;
-    min-height: 700px;
+    min-height: 400px;
     margin: 30px auto;
     display: flex;
     .footer {
@@ -19,11 +19,20 @@ footer {
         }
     }
 
+    .infos {
+        box-shadow: inset 1px 0px 0px rgba(0, 0, 0, 0.153);
+    }
+
     .info {
         display: flex;
+        box-shadow: inset 0px 1px 0px rgba(0, 0, 0, 0.153);
         ul {
             display: flex;
         }
+    }
+
+    .form {
+        
     }
 
 }

@@ -1,122 +1,151 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>La Montagne</title>
-    <link rel="stylesheet" href="/assets/styles/index.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
-</head>
-<body>
+    <link rel="stylesheet" href="/assets/styles/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+  </head>
+  <body>
     <header>
-        <h1>La montagne <br>  ça vous gagne</h1>
-        <p><em>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eapiente reprehenderit autem eius harum soluta eum eligendi tenetur impedit</em></p>
-        <button><i class="fa-solid fa-arrow-down"></i></button>
-        <nav>
-            <ul class="pages">
-                <li>This is massively</li>
-                <li>Generic page</li>
-                <li>Elements reference</li>
-            </ul>
-            <ul class="icons">
-                <li>
-                    <a href="#">
-                        <i class="fa-brands fa-twitter"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <i class="fa-brands fa-facebook"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <i class="fa-brands fa-instagram"></i>
-                    </a>
-                </li>     
-                <li>
-                    <a href="#">
-                        <i class="fa-brands fa-github"></i>
-                    </a>
-                </li>          
-            </ul>
-        </nav>
+      <h1>La montagne <br/>ça vous gagne</h1>
+      <p><em>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eapiente
+          reprehenderit autem eius harum soluta</em></p>
+      <button><i class="fa-solid fa-arrow-down"></i></button>
+      <nav>
+        <ul class="pages">
+          <li>This is massively</li>
+          <li>Generic page</li>
+          <li>Elements reference</li>
+        </ul>
+        <ul class="icons">
+          <li>
+            <a href="#">
+              <i class="fa-brands fa-twitter"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa-brands fa-facebook"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa-brands fa-github"></i>
+            </a>
+          </li>
+        </ul>
+      </nav>
     </header>
     <main>
-        <time datetime="2017-04-25">April 25, 2017</time>
+      <div class="time">
+        <time datetime="2017-04-25" id="time">April 25, 2017</time>
+      </div>
+      <div class="main-container">
         <h2>And this is a massive headline</h2>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus aliquid recusandae, voluptates perferendis beatae, sit nam velit magni nostrum provident tenetur? Quidem unde enim at consequuntur sed repellat accusamus molestiae.</p>
-        <div class="imgMain"></div>
-        <button>Full Story</button>
-        <section>
-            <div class="section-left">
-                <time datetime="2017-04-45">April 24, 2017</time> 
-                <h3>Sed magna ipsum faubicus</h3>
-                <div class="img"></div>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut doloribus quis deleniti fugiat quae ipsa hic quibusdam temporibus ullam, repudiandae iste? Rem praesentium dignissimos nobis doloribus voluptatum quis eligendi deleniti?</p>
-                <button>Full story</button>
-            </div>
-            <div class="section-right">
-                <time datetime="2017-04-22">April 22, 2017</time>
-                <h3>Primis eget imperdiet lorem</h3>
-                <div class="img"></div>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum quo modi facilis. Maxime nemo reprehenderit ex cupiditate excepturi corporis iusto laborum asperiores autem sunt adipisci at laudantium, assumenda deserunt ea.</p>
-                <button>Full story</button>
-            </div>
-        </section>
+        <p>
+          <em>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            Voluptatibus aliquid recusandae, voluptates perferendis beatae, sit
+            nam velit magni nostrum provident tenetur? Quidem unde enim at.</em>
+        </p>
+      </div>
+      <div class="imgMain"></div>
+      <button>Full Story</button>
+      <section>
+        <div class="section-left">
+          <div class="section-time">
+            <time datetime="2017-04-45">April 24, 2017</time>
+          </div>
+          <div class="h3-container">
+            <h3>Sed magna ipsum faubicus</h3>
+          </div>
+          <div class="img-left"></div>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut
+            doloribus quis deleniti fugiat quae ipsa hic quibusdam temporibus
+            ullam, repudiandae iste?
+          </p>
+          <button>Full story</button>
+        </div>
+        <div class="section-right">
+          <div class="section-time">
+            <time datetime="2017-04-22">April 22, 2017</time>
+          </div>
+          <div class="h3-container">
+            <h3>Primis eget imperdiet lorem</h3>
+          </div>
+          <div class="img-right"></div>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum quo
+            modi facilis. Maxime nemo reprehenderit ex cupiditate excepturi
+            corporis ius
+          </p>
+          <button>Full story</button>
+        </div>
+      </section>
     </main>
-
     <footer>
-        <div class="footer form">
-            <form action="">
-                <label for="name">Name</label>
-                <input type="text" id="name">
-                <label for="email">Email</label>
-                <input type="email" id="email">
-                <label for="text">Message</label>
-                <textarea name="text" id="text" cols="30" rows="10"></textarea>
-                <button type="submit">Send message</button>
-            </form>
+      <div class="footer form">
+        <form action="">
+          <label for="name">Name</label>
+          <input type="text" id="name" />
+          <label for="email">Email</label>
+          <input type="email" id="email" />
+          <label for="text">Message</label>
+          <textarea name="text" id="text" cols="30" rows="10"></textarea>
+          <button type="submit">Send message</button>
+        </form>
+      </div>
+      <div class="footer infos">
+        <div class="info adress">
+          <h4>Adress</h4>
+          <address>
+            1234, Somewhere Road #87257 Nashville, TN ooooo-oooo
+          </address>
         </div>
-        <div class="footer infos">
-            <div class="info adress">
-                <h4>Adress</h4>
-                <address>1234, Somewhere Road #87257 Nashville, TN ooooo-oooo</address>
-            </div>
-            <div class="info phone">
-                <h4>Phone</h4>
-                <a href="#">(000)000-0000</a>
-            </div>
-            <div class="info email">
-                <h4>Email</h4>
-                <a href="mailto:#">Info@untitled.itd</a>
-            </div>
-            <div class="info social">
-                <h4>Social</h4>
-            <ul>
-                <li>
-                    <a href="#">
-                        <i class="fa-brands fa-twitter"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <i class="fa-brands fa-facebook"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <i class="fa-brands fa-instagram"></i>
-                    </a>
-                </li>     
-                <li>
-                    <a href="#">
-                        <i class="fa-brands fa-github"></i>
-                    </a>
-                </li>          
-            </ul>
-            </div>
+        <div class="info phone">
+          <h4>Phone</h4>
+          <a href="#">(000)000-0000</a>
         </div>
+        <div class="info email">
+          <h4>Email</h4>
+          <a href="mailto:#">Info@untitled.itd</a>
+        </div>
+        <div class="info social">
+          <h4>Social</h4>
+          <ul>
+            <li>
+              <a href="#">
+                <i class="fa-brands fa-twitter"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa-brands fa-facebook"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa-brands fa-github"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </footer>
-</body>
+  </body>
 </html>

@@ -5,15 +5,22 @@ header {
     justify-content: center;
     flex-direction: column;
     button {
-        padding: 20px 22px;
-        border-radius: 5000px;
+        padding: 25px 29px;
+        border-radius: 1000px;
         border: 1px solid $color2;
         color: $color2;
         background: transparent;
+        transition: 0.2s;
+        font-size: 1.2rem;
+        cursor: pointer;
+        &:hover {
+            background: rgba(216, 255, 255, 0.822);
+            transform: scale(1.1);
+          }
     }
     h1 {
         color: $color2;
-        font-size: 5.8rem;
+        font-size: 5.6rem;
         font-family: "Inter", sans-serif;
         text-transform: uppercase;
         letter-spacing: 7px;
@@ -21,7 +28,6 @@ header {
     p {
         color: $color2;
         margin: 80px 0;
-        font-size: 1.7rem;
-        font-family: "Merriweather", sans-serif;
+        font-size: 1.3rem;
     }
 }

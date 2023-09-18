@@ -1,15 +1,20 @@
-button {
+main,
+footer {
+  button {
     padding: 20px 35px;
+    margin: 50px auto;
     background: $color2;
     color: $color1;
-    border: 1px solid $color1;
+    border: 2px solid $color1;
     cursor: pointer;
     transition: 0.2s;
     font-family: "Inter", sans-serif;
+    font-size: 0.9rem;
     text-transform: uppercase;
+    letter-spacing: 3px;
     &:hover {
-        background: rgba(84, 219, 219, 0.822);
-        transform: scale(1.1);
+      background: rgba(84, 219, 219, 0.822);
+      transform: scale(1.1);
     }
+  }
 }
-
