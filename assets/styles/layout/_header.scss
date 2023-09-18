@@ -1,3 +1,27 @@
 header {
     min-height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    button {
+        padding: 20px 22px;
+        border-radius: 5000px;
+        border: 1px solid $color2;
+        color: $color2;
+        background: transparent;
+    }
+    h1 {
+        color: $color2;
+        font-size: 5.8rem;
+        font-family: "Inter", sans-serif;
+        text-transform: uppercase;
+        letter-spacing: 7px;
+    }
+    p {
+        color: $color2;
+        margin: 80px 0;
+        font-size: 1.7rem;
+        font-family: "Merriweather", sans-serif;
+    }
 }

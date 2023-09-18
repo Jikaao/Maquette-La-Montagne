@@ -1,0 +1,29 @@
+footer {
+    background: $color3;
+    width: 75%;
+    min-height: 700px;
+    margin: 30px auto;
+    display: flex;
+    .footer {
+        width: 100%;
+    }
+
+    i {
+        color: $color1;
+        transition: 0.2s;
+        border: 1px solid rgba(0, 0, 0, 0.411);
+        border-radius: 200px;
+        padding: 10px;
+        &:hover {
+            transform: scale(1.2);
+        }
+    }
+
+    .info {
+        display: flex;
+        ul {
+            display: flex;
+        }
+    }
+
+}

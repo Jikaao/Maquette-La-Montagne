@@ -1,0 +1,16 @@
+main {
+  background: $color2;
+  width: 75%;
+  margin: 0 auto;
+
+  .imgMain {
+    background: url(/assets/images/pic01.jpg) center/cover;
+    width: 80%;
+    margin: 20px auto;
+    height: 750px;
+  }
+  section {
+    display: flex;
+    min-height: 500px;
+  }
+}

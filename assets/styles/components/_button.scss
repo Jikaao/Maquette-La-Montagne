@@ -1,0 +1,15 @@
+button {
+    padding: 20px 35px;
+    background: $color2;
+    color: $color1;
+    border: 1px solid $color1;
+    cursor: pointer;
+    transition: 0.2s;
+    font-family: "Inter", sans-serif;
+    text-transform: uppercase;
+    &:hover {
+        background: rgba(84, 219, 219, 0.822);
+        transform: scale(1.1);
+    }
+}
+
