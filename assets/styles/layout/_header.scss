@@ -1,10 +1,27 @@
 header {
   min-height: 100vh;
   position: relative;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
   color: $white1;
+
+  .header-content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    max-width: 90%;
+    margin: 0 auto;
+    min-height: 100vh;
+    opacity: 0;
+    transform: translateY(40px);
+    animation: headerAnim 1.5s forwards;
+    
+    @keyframes headerAnim {
+        to {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+}
   button {
     padding: 25px 29px;
     border-radius: 1000px;
@@ -20,22 +37,18 @@ header {
     }
   }
   h1 {
-    font-size: 5.6rem;
-    font-family: $font1;
-    text-transform: uppercase;
+    font-size: 4rem;
+    @include title;
     letter-spacing: 7px;
-    max-width: 80%;
   }
   p {
-    margin: 80px 0;
+    margin: 40px auto 60px;
+    font-style: italic;
     font-size: 1.3rem;
-    max-width: 80%;
+    max-width: 85%;
   }
 
   @media screen and (max-width: 1335px) {
-    h1 {
-      font-size: 4rem;
-    }
     p {
       font-size: 1rem;
     }

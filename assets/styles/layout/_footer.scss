@@ -1,38 +1,93 @@
 footer {
   background: $grey2;
   min-height: 400px;
+  width: 85%;
   margin: 30px auto;
-  display: flex;
-  .footer {
-    width: 100%;
+  display: grid;
+  grid-template-columns: 50% 50%;
+
+  form {
+    display: flex;
+    flex-direction: column;
+    padding: 60px 50px;
+    align-items: start;
+    label {
+      text-align: left;
+      width: 100%;
+      margin: 25px 0;
+      font-size: 0.8rem;
+      color: $grey3;
+      @include title;
+    }
+    input {
+      border: 1px solid $grey1;
+      width: 100%;
+      height: 50px;
+      border-radius: 4px;
+      background: none;
+    }
+    textarea {
+      border: 1px solid $grey1;
+      width: 100%;
+      border-radius: 5px;
+      background: none;
+      resize: none;
+      min-height: 250px;
+    }
+    button {
+      margin: 40px 0;
+      background: none;
+      color: $grey3;
+      border: 2px solid $grey1;
+      padding: 20px 35px;
+      cursor: pointer;
+      transition: 0.2s;
+      font-size: 0.9rem;
+      @include title;
+      &:hover {
+        background: rgba(84, 219, 219, 0.822);
+        transform: scale(1.1);
+      }
+    }
   }
 
   .infos {
-    box-shadow: inset 1px 0px 0px rgba(0, 0, 0, 0.153);
+    border: 1px solid $grey1;
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
     height: 100%;
   }
-
   .info {
     display: grid;
     grid-template-columns: 30% 70%;
-    box-shadow: inset 0px 1px 0px rgba(0, 0, 0, 0.153);
     font-size: 1.2rem;
+    border-bottom: 1px solid $grey1;
+    &:nth-child(4) {
+      border-bottom: none;
+    }
     h4 {
       color: $grey3;
-      margin: 0 75px 0 25px;
-      font-size: 0.9rem;
-      text-transform: uppercase;
-      font-family: $font1;
-      letter-spacing: 1px;
+      font-size: 0.8rem;
+      @include title;
       padding: 90px 20px;
+
+      @media screen and (max-width: 650px) {
+        padding: 70px 0;
+      }
     }
     address {
       color: $grey3;
       text-align: start;
+      font-size: 1rem;
+      @media screen and (max-width: 450px) {
+        font-size: 0.8rem;
+      }
     }
+
     a {
       color: $grey3;
       text-align: start;
+      font-size: 1rem;
     }
     ul {
       display: flex;
@@ -54,7 +109,7 @@ footer {
       }
     }
   }
-  @media screen and (max-width: 1335px) {
+  @media screen and (max-width: 1000px) {
     display: block;
 
     .info {

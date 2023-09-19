@@ -1,68 +1,110 @@
 main {
   background: $white1;
   margin: 0 auto;
-
+  width: 85%;
   .time {
     position: relative;
     padding: 70px 0;
     font-size: 1.3rem;
     font-family: $font2;
+    &::after,
     &::before {
       content: "";
       position: absolute;
-      left: 8%;
-      transform: translateY(13px);
+      top: 50%;
+      transform: translateY(-50%);
       height: 2px;
-      background: rgba(94, 94, 94, 0.144);
+      background: $grey1;
       width: 30%;
+
+      @media screen and (max-width: 900px) {
+        width: 25%;
+      }
+      @media screen and (max-width: 650px) {
+        width: 20%;
+      }
+      @media screen and (max-width: 450px) {
+        width: 15%;
+      }
+    }
+    &::before {
+      left: 10%;
     }
     &::after {
-      content: "";
-      position: absolute;
-      right: 8%;
-      transform: translateY(13px);
-      height: 2px;
-      background: rgba(94, 94, 94, 0.144);
-      width: 30%;
+      right: 10%;
+    }
+  }
+  button {
+    padding: 20px 35px;
+    margin: 40px auto;
+    background: $white1;
+    color: $black1;
+    border: 2px solid $black1;
+    cursor: pointer;
+    transition: 0.2s;
+    font-size: 0.9rem;
+    @include title;
+    &:hover {
+      background: rgba(84, 219, 219, 0.822);
+      transform: scale(1.1);
     }
   }
   .main-container {
     width: 50%;
     margin: 0 auto;
     h2 {
-      font-size: 3.5rem;
-      font-family: $font1;
-      text-transform: uppercase;
-      letter-spacing: 4px;
+      @include title;
+      font-size: 3rem;
     }
     p {
-      font-size: 1rem;
+      font-size: 0.9rem;
       line-height: 35px;
       padding: 50px 0;
+      font-style: italic;
     }
   }
 
   .imgMain {
     background: url(/assets/images/pic01.jpg) center/cover;
     width: 80%;
-    margin: 20px auto;
+    margin: 0 auto;
     height: 750px;
+
+    @media screen and (max-width: 1000px) {
+      height: 400px;
+    }
+    @media screen and (max-width: 450px) {
+      width: 90%;
+      height: 300px;
+    }
   }
 
   section {
     display: flex;
     min-height: 500px;
-    box-shadow: inset 0px 1px 0px rgba(0, 0, 0, 0.153);
+    box-shadow: inset 0px 1px 0px $grey1;
   }
 
   .section-right,
   .section-left {
     width: 100%;
-    padding: 50px 80px;
-    box-shadow: inset 1px 0px 0px rgba(0, 0, 0, 0.153);
+    padding: 50px;
+    box-shadow: inset 1px 0px 0px $grey1;
+
+    @media screen and (max-width: 450px) {
+      padding: 20px;
+    }
     .section-time {
       padding: 20px 0;
       font-family: $font2;
+    }
+    .h3-container {
+      margin: 0 auto;
+      h3 {
+        @include title;
+        font-size: 1.6rem;
+        line-height: 30px;
+      }
     }
     .img-left {
       background: url(/assets/images/pic02.jpg) center/cover;
@@ -77,28 +119,10 @@ main {
     p {
       font-size: 1.1rem;
       text-align: left;
-      line-height: 35px;
-    }
-
-    .h3-container {
-      width: 65%;
-      margin: 0 auto;
-      h3 {
-        font-family: $font1;
-        font-size: 1.6rem;
-        text-transform: uppercase;
-        letter-spacing: 4px;
-        line-height: 40px;
-      }
+      line-height: 30px;
     }
   }
-  @media screen and (max-width: 1335px) {
-    .main-container h2 {
-      font-size: 3rem;
-    }
-    .imgMain {
-      height: 600px;
-    }
+  @media screen and (max-width: 1000px) {
     section {
       display: block;
     }
@@ -111,7 +135,5 @@ main {
         font-size: 2.5rem;
       }
     }
-  }
-  @media screen and (max-width: 600px) {
   }
 }
