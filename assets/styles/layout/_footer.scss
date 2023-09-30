@@ -125,4 +125,10 @@ footer {
       }
     }
   }
+
+  @media screen and (max-width: 500px) {
+    form {
+      padding: 30px;
+    }
+  }
 }

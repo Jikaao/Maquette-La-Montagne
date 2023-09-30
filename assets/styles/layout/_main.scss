@@ -91,8 +91,8 @@ main {
     padding: 50px;
     box-shadow: inset 1px 0px 0px $grey1;
 
-    @media screen and (max-width: 450px) {
-      padding: 20px;
+    @media screen and (max-width: 480px) {
+      padding: 18px;
     }
     .section-time {
       padding: 20px 0;

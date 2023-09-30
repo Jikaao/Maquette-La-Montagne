@@ -14,14 +14,14 @@ header {
     opacity: 0;
     transform: translateY(40px);
     animation: headerAnim 1.5s forwards;
-    
+
     @keyframes headerAnim {
-        to {
-            transform: translateY(0);
-            opacity: 1;
-        }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
     }
-}
+  }
   button {
     padding: 25px 29px;
     border-radius: 1000px;

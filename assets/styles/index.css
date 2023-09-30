@@ -24,7 +24,8 @@ li {
   list-style: none;
 }
 
-a, a:visited {
+a,
+a:visited {
   color: rgb(243, 243, 243);
 }
 
@@ -359,10 +360,10 @@ main .section-left {
   -webkit-box-shadow: inset 1px 0px 0px rgb(209, 209, 209);
           box-shadow: inset 1px 0px 0px rgb(209, 209, 209);
 }
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 480px) {
   main .section-right,
   main .section-left {
-    padding: 20px;
+    padding: 18px;
   }
 }
 main .section-right .section-time,
@@ -562,5 +563,10 @@ footer .info ul i:hover {
   }
   footer .info ul i {
     padding: 12px;
+  }
+}
+@media screen and (max-width: 500px) {
+  footer form {
+    padding: 30px;
   }
 }/*# sourceMappingURL=index.css.map */

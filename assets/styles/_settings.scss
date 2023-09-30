@@ -9,16 +9,16 @@
 
 $font1: inter, sans-serif;
 $font2: merriweather, sans-serif;
-$black1: rgb(17,17,17);
-$white1: rgb(243,243,243);
-$grey1: rgb(209,209,209);
-$grey2: rgb(233,233,233);
-$grey3: rgb(105,105,105);
+$black1: rgb(17, 17, 17);
+$white1: rgb(243, 243, 243);
+$grey1: rgb(209, 209, 209);
+$grey2: rgb(233, 233, 233);
+$grey3: rgb(105, 105, 105);
 
 @mixin title {
-    font-family: $font1;
-    letter-spacing: 2px;
-    text-transform: uppercase;
+  font-family: $font1;
+  letter-spacing: 2px;
+  text-transform: uppercase;
 }
 
 * {
@@ -29,13 +29,14 @@ $grey3: rgb(105,105,105);
 }
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 li {
-    list-style: none;
+  list-style: none;
 }
-a, a:visited {
-    color: $white1;
+a,
+a:visited {
+  color: $white1;
 }
 body {
   background: url(/assets/images/bg.jpg) fixed center/cover;
@@ -58,7 +59,7 @@ body {
     @keyframes animeBefore {
       to {
         opacity: 0;
-      }  
+      }
     }
   }
 }
